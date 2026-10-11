@@ -1,0 +1,6 @@
+{
+  "name": "pmcro-maf",
+  "version": "0.1.0",
+  "description": "Microsoft Agent Framework skills: workflows, Ollama agents, and MCP tools.",
+  "skills": ["./skills/"]
+}

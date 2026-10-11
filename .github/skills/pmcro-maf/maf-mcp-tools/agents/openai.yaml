@@ -1,0 +1,4 @@
+interface:
+  display_name: "MAF MCP Tools"
+  short_description: "Wire Microsoft Agent Framework agents to existing MCP tools"
+  default_prompt: "Use $maf-mcp-tools to inspect and wire the authorized MCP tool connection for MAF."

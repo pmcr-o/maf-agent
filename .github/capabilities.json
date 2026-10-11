@@ -1,0 +1,26 @@
+{
+  "schema": "pmcro.capabilities/v1",
+  "agent": "maf-agent",
+  "executionRule": "registered AND runtime-present AND authorized",
+  "manualParity": {
+    "required": true,
+    "rule": "agent and manual terminal use the same scripts with the same arguments, exit codes, and evidence"
+  },
+  "capabilities": [
+    {
+      "plugin": "pmcro-maf",
+      "skill": "maf-mcp-tools",
+      "route": "@maf-agent /pmcro-maf:maf-mcp-tools"
+    },
+    {
+      "plugin": "pmcro-maf",
+      "skill": "maf-ollama-agents",
+      "route": "@maf-agent /pmcro-maf:maf-ollama-agents"
+    },
+    {
+      "plugin": "pmcro-maf",
+      "skill": "maf-workflows",
+      "route": "@maf-agent /pmcro-maf:maf-workflows"
+    }
+  ]
+}

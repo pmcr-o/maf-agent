@@ -1,0 +1,16 @@
+{
+  "name": "maf-agent",
+  "owner": {
+    "name": "pmcr-o"
+  },
+  "metadata": {
+    "description": "Microsoft Agent Framework domain orchestrator for MAF workflows, MCP tools, and bounded local-model agent patterns."
+  },
+  "plugins": [
+    {
+      "name": "pmcro-maf",
+      "source": "./.pmcro/plugins/pmcro-maf",
+      "description": "pmcro-maf capabilities owned by maf-agent"
+    }
+  ]
+}

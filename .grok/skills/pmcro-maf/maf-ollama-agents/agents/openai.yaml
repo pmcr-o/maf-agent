@@ -1,0 +1,4 @@
+interface:
+  display_name: "MAF Ollama Agents"
+  short_description: "Configure a bounded MAF agent using a local Ollama model"
+  default_prompt: "Use $maf-ollama-agents to configure a local Ollama-backed Microsoft Agent Framework agent."

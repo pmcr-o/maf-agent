@@ -1,0 +1,16 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "maf-agent",
+  "owner": "pmcr-o",
+  "description": "Microsoft Agent Framework domain orchestrator for MAF workflows, MCP tools, and bounded local-model agent patterns.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "pmcro-maf",
+      "source": "./.pmcro/plugins/pmcro-maf",
+      "description": "pmcro-maf capabilities owned by maf-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}

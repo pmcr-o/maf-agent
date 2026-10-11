@@ -1,0 +1,28 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "maf-agent",
+  "entries": [
+    {
+      "route": "@maf-agent /pmcro-maf:maf-mcp-tools",
+      "plugin": "pmcro-maf",
+      "skill": "maf-mcp-tools",
+      "description": "Connects Microsoft Agent Framework agents to MCP servers, or exposes agents and ASP.NET endpoints as MCP tools, using the official ModelContextProtocol C# SDK. Use when listing MCP tools, passing them to AsAIAgent, or serving tools with MapMcp. Do not use for workflow graphs (use maf-workflows) or for OpenAPI-to-MCP generation, which MAF does not provide.",
+      "path": ".pmcro/plugins/pmcro-maf/skills/maf-mcp-tools"
+    },
+    {
+      "route": "@maf-agent /pmcro-maf:maf-ollama-agents",
+      "plugin": "pmcro-maf",
+      "skill": "maf-ollama-agents",
+      "description": "Creates a Microsoft Agent Framework agent backed by a local Ollama model through OllamaSharp, sized for a 16,384-token context. Use when configuring the Ollama endpoint, model name, timeouts, or AsAIAgent for PMCR-O roles. Do not use for workflow graph wiring (use maf-workflows) or MCP tools (use maf-mcp-tools).",
+      "path": ".pmcro/plugins/pmcro-maf/skills/maf-ollama-agents"
+    },
+    {
+      "route": "@maf-agent /pmcro-maf:maf-workflows",
+      "plugin": "pmcro-maf",
+      "skill": "maf-workflows",
+      "description": "Builds and runs Microsoft Agent Framework workflows for PMCR-O role graphs with WorkflowBuilder, executors, and JSON checkpoints. Use when wiring role executors, adding checkpoints, or resuming a workflow in .NET. Do not use for agent tool wiring (use maf-mcp-tools) or Ollama client setup (use maf-ollama-agents).",
+      "path": ".pmcro/plugins/pmcro-maf/skills/maf-workflows"
+    }
+  ]
+}
