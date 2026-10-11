@@ -1,0 +1,4 @@
+interface:
+  display_name: "MAF Workflows"
+  short_description: "Build MAF role workflows with checkpoints and bounded runs"
+  default_prompt: "Use $maf-workflows to wire a bounded MAF role workflow with recovery checkpoints."
